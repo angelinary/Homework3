@@ -1,0 +1,13 @@
+<html>
+	<head> 
+		<link rel = "stylesheet" href = "{{url_for('static', filename = 'style.css')}}"> <!--don't need to close link tags-->
+	</head>
+		
+	<body>
+		<p>Hello, world!</p>
+		<br>
+		<a href = "{{url_for('recipes')}}"> recipes </a>
+		<br>
+		<a href = "{{url_for('add')}}"> add</a>
+	</body>
+</html>

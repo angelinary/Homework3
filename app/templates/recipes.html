@@ -1,0 +1,16 @@
+<html>
+	<head></head>
+	<body>
+		<p>recipes</p>
+		<ul> <!--unordered list-->
+			{% for recipe in recipes %} 
+				<li>
+					<a href = "{{url_for('recipe', id = recipe.id)}}"> {{recipe.title}} </a>
+				</li>
+			{% endfor %}
+		</ul>
+		<a href = "{{url_for('index')}}"> index </a>
+		<br>
+		<a href = "{{url_for('add')}}"> add</a>
+	</body>
+</html>
